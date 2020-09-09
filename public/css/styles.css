@@ -37,7 +37,8 @@ input {
     outline: none;
 }
 
-button {
+button,
+.leave-room {
     cursor: pointer;
     padding: 12px;
     background: #7C5CBF;
@@ -47,7 +48,8 @@ button {
     transition: background .3s ease;
 }
 
-button:hover {
+button:hover,
+.leave-room:hover {
     background: #6b47b8;
 }
 
@@ -90,6 +92,7 @@ button:disabled {
 }
 
 .chat__sidebar {
+    position: relative;
     height: 100vh;
     color: white;
     background: #333744;
@@ -180,4 +183,13 @@ button:disabled {
     list-style-type: none;
     font-weight: 300;
     padding: 12px 24px 0 24px;
+}
+
+.leave-room {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  width: 75%;
+  text-decoration: none;
+  text-align: center;
 }
